@@ -1,4 +1,4 @@
-
+import Link from 'next/link'
 const Banner=(props)=>{
 
     return(
@@ -14,9 +14,10 @@ const Banner=(props)=>{
                 scotiabank arena<br></br>
                 7:30 pm
             </p>
+
             <canvas id='myCanvas'></canvas>
-            <div>
-                <a href='/tickets'>Ticket Details</a>
+            <div id='continer'>
+                <Link href='/tickets'><a>Ticket Details</a></Link>
             </div>
             
         
@@ -92,12 +93,13 @@ const Banner=(props)=>{
                     font-size:30;
                     font-family:Verdana;
                     text-align:right;
-                    left:70%;
+                    left:65%;
                     top:90%;
                     z-index:3;
                     background-color:rgba(255,0,0,0);
                     cursor:pointer;
                     text-decoration:none;
+
                 }
                 a:hover{
                     text-decoration:underline

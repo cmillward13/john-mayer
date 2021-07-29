@@ -1,16 +1,23 @@
-
+import Image from 'next/image'
 const Photo=()=>{
 
 
 
     return(
         <div>
-            <img src='/inked.jpg'/>
-
+            <div id='container'>
+                <Image 
+                    src={'/inked.jpg'} 
+                    width={804}
+                    height={1199}
+                    priority={true}
+                    alt="pic of John Maer"
+                />
+            </div>
 
             <style jsx>
             {`
-            img{
+            #container{
                 position:absolute;
                 display:block;
                 width:100%;
@@ -18,6 +25,7 @@ const Photo=()=>{
                 bottom:0px;
                 right:0px;
             }
+
 
             `}
         </style>

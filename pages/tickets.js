@@ -1,4 +1,4 @@
-
+import Image from 'next/image'
 export default function Home() {
 
 
@@ -8,10 +8,22 @@ export default function Home() {
 
         <table>
             <tr>
-                <img src='/JM.jpg' id='pic1'></img>
+                <Image 
+                    src={'/JM.jpg'}
+                    id={'pic1'}
+                    width={638}
+                    height={517}
+                    alt="pic of concert detials"
+                 />
             </tr>
             <tr>
-                <img src='/tickets.jpg' id='pic2'></img>
+                <Image 
+                    src={'/tickets.jpg'}
+                    id={'pic2'}
+                    width={686}
+                    height={327}
+                    alt="pic of tickets"
+                 />
             </tr>
         </table>
 
@@ -26,16 +38,6 @@ export default function Home() {
             left:0;
             width:100%;
             top:0;
-        }
-        #pic1{
-            left:0px;
-            top:0px;
-            width:100%
-
-        }
-        #pic2{
-            left:0px;
-            width:100%;
         }
         `}
       </style>
